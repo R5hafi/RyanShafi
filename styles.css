@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.home{
+    /*Relative unit usage below*/
+    height: 100vh;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+#logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+span{
+    color:rgb(53, 53, 119)
+}
+header{
+    /*Layering with z-index done below*/
+    position: fixed;
+    width: 100%;
+    background-color: #101010;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:rgb(53, 53, 119);
+    transition: .4s;
+}
+#profile {
+    display: inline-block;
+    position: relative;
+    left: 825px;
+    top: 150px;
+}
+#profile-name {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.about{
+    width:100%;
+    padding: 60px 0px;
+    background-color: #191919;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text{
+    width:550px;
+}
+.hint{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.about-toggle{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-toggle a:hover{
+    color:rgb(53, 53, 119);
+    font-size: 80px;
+    transition: .4s;
+    cursor: pointer;
+}
+.about-toggle:focus ~ .info{
+    display: flex;
+}
+.info{display:none}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-text p a:hover{
+    text-decoration: underline;
+    transition: .4s;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-one{
+    background-color: rgb(53, 53, 119);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-one:hover{
+    background-color: transparent;
+    border: 2px solid rgb(53, 53, 119);
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    background: #101010;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(53, 53, 119);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
